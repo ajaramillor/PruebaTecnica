@@ -2,7 +2,6 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -18,149 +17,68 @@
   </p>
 </div>
 
-
-
-- [Introducción](#introducción)
-- [Built With](#built-with)
-  - [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Installation](#installation)
-  - [Usage](#usage)
-  - [Roadmap](#roadmap)
-  - [Contributing](#contributing)
-  - [License](#license)
-  - [Contact](#contact)
-  - [Acknowledgments](#acknowledgments)
-
-
-# Introducción
-
-La prueba consiste en crear un 
-
-
-# Built With
-
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+**Índice**
+- [Planteamiento del problema](#planteamiento-del-problema)
+- [Objetivos](#objetivos)
+- [Exclusiones](#exclusiones)
+- [Solución propuesta](#solución-propuesta)
+  - [Factores de riesgo](#factores-de-riesgo)
+  - [Criterios de éxito](#criterios-de-éxito)
+    - [¿Listo para la revisión?](#listo-para-la-revisión)
 
 
 
-<!-- GETTING STARTED -->
-## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+# Planteamiento del problema
 
-### Prerequisites
+Como prueba técnica se pide el planteamiento y diseño de una solución de procesamiento de datos con el fin de verificar las capacidades técnicas y la capacidad de trabajar bajo presión.
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+# Objetivos
 
-### Installation
+El objetivo de este proyecto es construir una base de datos que alimente un dashboard de visualización de datos para la toma de decisiones de una aerolínea. La información disponible para esta base de datos son los registros históricos de vuelos dentro del país. La base de datos debe ser capaz de manejar grandes cantidades de datos y ser escalable para permitir futuras expansiones del dashboard.
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/ajaramillor/PruebaTecnica.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+# Exclusiones
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+Este proyecto no abordará la construcción del dashboard en sí, sino que se centrará en la construcción de la base de datos que lo alimenta.
 
+# Solución propuesta
 
+Para lograr los objetivos de este proyecto, se propone la siguiente solución:
 
-<!-- USAGE EXAMPLES -->
-## Usage
+1. Identificar las fuentes de datos necesarias para el dashboard y determinar los requisitos de integración y transformación de datos.
+2. Diseñar y construir una arquitectura de base de datos escalable que pueda manejar grandes cantidades de datos y permitir futuras expansiones.
+3. Desarrollar un proceso de integración y transformación de datos que permita la carga automatizada de datos en la base de datos.
+4. Configurar la base de datos para optimizar el rendimiento y la escalabilidad.
+5. Implementar un proceso de verificación de calidad de datos para garantizar la precisión y la consistencia de los datos en la base de datos.
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+## Factores de riesgo
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+Los principales riesgos asociados con este proyecto incluyen:
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- Fallos en la integración y transformación de datos.
+- Problemas de rendimiento y escalabilidad de la base de datos.
+- Problemas de calidad de datos que afectan la precisión y la consistencia del dashboard.
 
+Para mitigar estos riesgos, se implementarán pruebas de integración y transformación de datos exhaustivas, se configurará la base de datos para optimizar el rendimiento y se implementará un proceso de verificación de calidad de datos.
 
+## Criterios de éxito
 
-<!-- ROADMAP -->
-## Roadmap
+El éxito de este proyecto se medirá por la capacidad de la base de datos para manejar grandes cantidades de datos de manera eficiente y escalable, así como por la precisión y la consistencia de los datos en la base de datos.
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+### ¿Listo para la revisión?
 
-See the [open issues](https://github.com/ajaramillor/PruebaTecnica/issues) for a full list of proposed features (and known issues).
+- [ ]  Cambiar el estado del documento a `Propuesto (abierto a comentarios)`
+- [ ]  Agregar evaluadores a la tabla de abajo, y hacer clic en el botón para realizar la solicitud.
+- [ ]  Compartir documento en Slack
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+Los evaluadores deben dejar sus opiniones como comentarios en la especificación técnica, y usar el título de su línea de evaluación para resumir sus comentarios.
 
+- Leyenda de estados de revisión
+    - *Revisión solicitada*: el autor (u otra persona) solicitó una revisión a este evaluador.
+    - *Cambios solicitados*: el resumen de la revisión debe indicar claramente qué cambios se solicitan. El autor debe responder a los comentarios del evaluador y ponerse en contacto.
+    - *Aprobado*: ¡listo para implementación! El evaluador considera que esta especificación técnica debe ser aceptada, y confía en que el autor realice cambios basados en sus comentarios.
 
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTACT -->
-## Contact
-
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
-
-Project Link: [https://github.com/ajaramillor/PruebaTecnica](https://github.com/ajaramillor/PruebaTecnica)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* []()
-* []()
-* []()
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
+[Reviewers](https://www.notion.so/96b7583df0ad4f9ead70daa8ef019b59)
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
