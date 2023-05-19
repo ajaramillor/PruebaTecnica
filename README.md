@@ -77,7 +77,7 @@ A continuación se incluye la descripción general de cada uno de los pasos y el
 ## Limpieza y carga de los datos
 
 Los datos se encuentran en el archivo comprimido [] flights.csv, contenido en el archivo comprimido flights.zip. Se hizo de esta manera porque el archivo descomprimido supera el límite de Github. A continuación, procederemos a continuar la limpieza de datos en el Jupyter notebook [].
-[Reviewers](https://www.notion.so/96b7583df0ad4f9ead70daa8ef019b59)
+
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
