@@ -1,0 +1,13 @@
+2023-05-18 23:32:11,456 - ERROR - An exception occurred: Can only use .str accessor with string values!
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_8984\3283861045.py", line 6, in <module>
+    df['DISTANCE'] = df['DISTANCE'].str.replace(' miles', '')
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\generic.py", line 5902, in __getattr__
+    return object.__getattribute__(self, name)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\accessor.py", line 182, in __get__
+    accessor_obj = self._accessor(obj)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\strings\accessor.py", line 181, in __init__
+    self._inferred_dtype = self._validate(data)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\strings\accessor.py", line 235, in _validate
+    raise AttributeError("Can only use .str accessor with string values!")
+AttributeError: Can only use .str accessor with string values!
