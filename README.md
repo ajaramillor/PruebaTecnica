@@ -18,16 +18,20 @@
 </div>
 
 **Índice**
+- [Prueba Técnica Nequi](#prueba-técnica-nequi)
 - [Planteamiento del problema](#planteamiento-del-problema)
 - [Objetivos](#objetivos)
 - [Exclusiones](#exclusiones)
 - [Solución propuesta](#solución-propuesta)
   - [Factores de riesgo](#factores-de-riesgo)
   - [Criterios de éxito](#criterios-de-éxito)
-    - [¿Listo para la revisión?](#listo-para-la-revisión)
+- [Proceso](#proceso)
+  - [Limpieza y carga de los datos](#limpieza-y-carga-de-los-datos)
 
 
+# Prueba Técnica Nequi
 
+**Índice**
 
 # Planteamiento del problema
 
@@ -43,13 +47,12 @@ Este proyecto no abordará la construcción del dashboard en sí, sino que se ce
 
 # Solución propuesta
 
-Para lograr los objetivos de este proyecto, se propone la siguiente solución:
+El proceso constará de las siguientes etapas:
 
-1. Identificar las fuentes de datos necesarias para el dashboard y determinar los requisitos de integración y transformación de datos.
-2. Diseñar y construir una arquitectura de base de datos escalable que pueda manejar grandes cantidades de datos y permitir futuras expansiones.
-3. Desarrollar un proceso de integración y transformación de datos que permita la carga automatizada de datos en la base de datos.
-4. Configurar la base de datos para optimizar el rendimiento y la escalabilidad.
-5. Implementar un proceso de verificación de calidad de datos para garantizar la precisión y la consistencia de los datos en la base de datos.
+1. **Carga de datos históricos en CSV:** Se recopilarán los registros históricos de vuelos dentro del país en formato CSV desde las fuentes de datos identificadas en la etapa de planificación.
+2. **Limpieza de datos:** Se llevará a cabo un proceso de limpieza de datos para garantizar que los datos sean precisos y consistentes. Esto incluirá la eliminación de datos duplicados, la corrección de errores tipográficos y la normalización de los datos.
+3. **Creación de la base de datos:** Se diseñará y construirá una arquitectura de base de datos escalable que pueda manejar grandes cantidades de datos y permitir futuras expansiones. Se utilizará un motor de base de datos relacional para garantizar la integridad de los datos y se implementará una estructura de tabla eficiente para optimizar el rendimiento.
+4. **Creación del dashboard:** Se creará un dashboard de visualización de datos para la toma de decisiones de la aerolínea utilizando los datos almacenados en la base de datos. El dashboard se construirá utilizando una herramienta de visualización de datos como Tableau o Power BI y se personalizará para satisfacer las necesidades específicas de la aerolínea.
 
 ## Factores de riesgo
 
@@ -65,19 +68,13 @@ Para mitigar estos riesgos, se implementarán pruebas de integración y transfor
 
 El éxito de este proyecto se medirá por la capacidad de la base de datos para manejar grandes cantidades de datos de manera eficiente y escalable, así como por la precisión y la consistencia de los datos en la base de datos.
 
-### ¿Listo para la revisión?
+# Proceso
 
-- [ ]  Cambiar el estado del documento a `Propuesto (abierto a comentarios)`
-- [ ]  Agregar evaluadores a la tabla de abajo, y hacer clic en el botón para realizar la solicitud.
-- [ ]  Compartir documento en Slack
+A continuación se incluye la descripción general de cada uno de los pasos y el link a su respectivo notebook.
 
-Los evaluadores deben dejar sus opiniones como comentarios en la especificación técnica, y usar el título de su línea de evaluación para resumir sus comentarios.
+## Limpieza y carga de los datos
 
-- Leyenda de estados de revisión
-    - *Revisión solicitada*: el autor (u otra persona) solicitó una revisión a este evaluador.
-    - *Cambios solicitados*: el resumen de la revisión debe indicar claramente qué cambios se solicitan. El autor debe responder a los comentarios del evaluador y ponerse en contacto.
-    - *Aprobado*: ¡listo para implementación! El evaluador considera que esta especificación técnica debe ser aceptada, y confía en que el autor realice cambios basados en sus comentarios.
-
+Los datos se encuentran en el archivo comprimido [] flights.csv, contenido en el archivo comprimido flights.zip. Se hizo de esta manera porque el archivo descomprimido supera el límite de Github. A continuación, procederemos a continuar la limpieza de datos en el Jupyter notebook [].
 [Reviewers](https://www.notion.so/96b7583df0ad4f9ead70daa8ef019b59)
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
