@@ -476,3 +476,630 @@ Traceback (most recent call last):
     result, timezones = array_strptime(arg, fmt, exact=exact, errors=errors)
   File "pandas\_libs\tslibs\strptime.pyx", line 150, in pandas._libs.tslibs.strptime.array_strptime
 ValueError: time data '0' does not match format '%H%M' (match)
+2023-05-20 00:06:00,725 - ERROR - Se ha presentado una excepcion: Can only use .str accessor with string values!
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_25844\741988053.py", line 6, in <module>
+    df['DISTANCE']=df['DISTANCE'].str.replace(' miles', '')
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\generic.py", line 5902, in __getattr__
+    return object.__getattribute__(self, name)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\accessor.py", line 182, in __get__
+    accessor_obj = self._accessor(obj)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\strings\accessor.py", line 181, in __init__
+    self._inferred_dtype = self._validate(data)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\strings\accessor.py", line 235, in _validate
+    raise AttributeError("Can only use .str accessor with string values!")
+AttributeError: Can only use .str accessor with string values!
+2023-05-20 00:06:00,725 - ERROR - Se ha presentado una excepcion: Can only use .str accessor with string values!
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_25844\741988053.py", line 6, in <module>
+    df['DISTANCE']=df['DISTANCE'].str.replace(' miles', '')
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\generic.py", line 5902, in __getattr__
+    return object.__getattribute__(self, name)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\accessor.py", line 182, in __get__
+    accessor_obj = self._accessor(obj)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\strings\accessor.py", line 181, in __init__
+    self._inferred_dtype = self._validate(data)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\strings\accessor.py", line 235, in _validate
+    raise AttributeError("Can only use .str accessor with string values!")
+AttributeError: Can only use .str accessor with string values!
+2023-05-20 00:06:22,862 - ERROR - Se ha presentado una excepcion: time data '1997-01-020' does not match format '%Y-%m-%d%H%M' (match)
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_25844\741988053.py", line 17, in <module>
+    pd.to_datetime(df['FLIGHTDATE'].dt.strftime('%Y-%m-%d') + df[columna].astype(str), format='%Y-%m-%d%H%M')
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 1068, in to_datetime
+    values = convert_listlike(arg._values, format)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 430, in _convert_listlike_datetimes
+    res = _to_datetime_with_format(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 538, in _to_datetime_with_format
+    res = _array_strptime_with_fallback(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 473, in _array_strptime_with_fallback
+    result, timezones = array_strptime(arg, fmt, exact=exact, errors=errors)
+  File "pandas\_libs\tslibs\strptime.pyx", line 150, in pandas._libs.tslibs.strptime.array_strptime
+ValueError: time data '1997-01-020' does not match format '%Y-%m-%d%H%M' (match)
+2023-05-20 00:06:22,862 - ERROR - Se ha presentado una excepcion: time data '1997-01-020' does not match format '%Y-%m-%d%H%M' (match)
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_25844\741988053.py", line 17, in <module>
+    pd.to_datetime(df['FLIGHTDATE'].dt.strftime('%Y-%m-%d') + df[columna].astype(str), format='%Y-%m-%d%H%M')
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 1068, in to_datetime
+    values = convert_listlike(arg._values, format)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 430, in _convert_listlike_datetimes
+    res = _to_datetime_with_format(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 538, in _to_datetime_with_format
+    res = _array_strptime_with_fallback(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 473, in _array_strptime_with_fallback
+    result, timezones = array_strptime(arg, fmt, exact=exact, errors=errors)
+  File "pandas\_libs\tslibs\strptime.pyx", line 150, in pandas._libs.tslibs.strptime.array_strptime
+ValueError: time data '1997-01-020' does not match format '%Y-%m-%d%H%M' (match)
+2023-05-20 00:06:22,862 - ERROR - Se ha presentado una excepcion: time data '1997-01-020' does not match format '%Y-%m-%d%H%M' (match)
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_25844\741988053.py", line 17, in <module>
+    pd.to_datetime(df['FLIGHTDATE'].dt.strftime('%Y-%m-%d') + df[columna].astype(str), format='%Y-%m-%d%H%M')
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 1068, in to_datetime
+    values = convert_listlike(arg._values, format)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 430, in _convert_listlike_datetimes
+    res = _to_datetime_with_format(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 538, in _to_datetime_with_format
+    res = _array_strptime_with_fallback(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 473, in _array_strptime_with_fallback
+    result, timezones = array_strptime(arg, fmt, exact=exact, errors=errors)
+  File "pandas\_libs\tslibs\strptime.pyx", line 150, in pandas._libs.tslibs.strptime.array_strptime
+ValueError: time data '1997-01-020' does not match format '%Y-%m-%d%H%M' (match)
+2023-05-20 00:10:04,943 - ERROR - Se ha presentado una excepcion: Can only use .str accessor with string values!
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_25844\513103247.py", line 6, in <module>
+    df['DISTANCE']=df['DISTANCE'].str.replace(' miles', '')
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\generic.py", line 5902, in __getattr__
+    return object.__getattribute__(self, name)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\accessor.py", line 182, in __get__
+    accessor_obj = self._accessor(obj)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\strings\accessor.py", line 181, in __init__
+    self._inferred_dtype = self._validate(data)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\strings\accessor.py", line 235, in _validate
+    raise AttributeError("Can only use .str accessor with string values!")
+AttributeError: Can only use .str accessor with string values!
+2023-05-20 00:10:04,943 - ERROR - Se ha presentado una excepcion: Can only use .str accessor with string values!
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_25844\513103247.py", line 6, in <module>
+    df['DISTANCE']=df['DISTANCE'].str.replace(' miles', '')
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\generic.py", line 5902, in __getattr__
+    return object.__getattribute__(self, name)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\accessor.py", line 182, in __get__
+    accessor_obj = self._accessor(obj)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\strings\accessor.py", line 181, in __init__
+    self._inferred_dtype = self._validate(data)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\strings\accessor.py", line 235, in _validate
+    raise AttributeError("Can only use .str accessor with string values!")
+AttributeError: Can only use .str accessor with string values!
+2023-05-20 00:10:04,943 - ERROR - Se ha presentado una excepcion: Can only use .str accessor with string values!
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_25844\513103247.py", line 6, in <module>
+    df['DISTANCE']=df['DISTANCE'].str.replace(' miles', '')
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\generic.py", line 5902, in __getattr__
+    return object.__getattribute__(self, name)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\accessor.py", line 182, in __get__
+    accessor_obj = self._accessor(obj)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\strings\accessor.py", line 181, in __init__
+    self._inferred_dtype = self._validate(data)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\strings\accessor.py", line 235, in _validate
+    raise AttributeError("Can only use .str accessor with string values!")
+AttributeError: Can only use .str accessor with string values!
+2023-05-20 00:10:18,083 - ERROR - Se ha presentado una excepcion: Can only use .dt accessor with datetimelike values
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_25844\513103247.py", line 17, in <module>
+    df[columna]=df['FLIGHTDATE'] + df[columna].dt.strftime('%H%M')
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\generic.py", line 5902, in __getattr__
+    return object.__getattribute__(self, name)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\accessor.py", line 182, in __get__
+    accessor_obj = self._accessor(obj)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\indexes\accessors.py", line 512, in __new__
+    raise AttributeError("Can only use .dt accessor with datetimelike values")
+AttributeError: Can only use .dt accessor with datetimelike values
+2023-05-20 00:10:18,083 - ERROR - Se ha presentado una excepcion: Can only use .dt accessor with datetimelike values
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_25844\513103247.py", line 17, in <module>
+    df[columna]=df['FLIGHTDATE'] + df[columna].dt.strftime('%H%M')
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\generic.py", line 5902, in __getattr__
+    return object.__getattribute__(self, name)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\accessor.py", line 182, in __get__
+    accessor_obj = self._accessor(obj)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\indexes\accessors.py", line 512, in __new__
+    raise AttributeError("Can only use .dt accessor with datetimelike values")
+AttributeError: Can only use .dt accessor with datetimelike values
+2023-05-20 00:10:18,083 - ERROR - Se ha presentado una excepcion: Can only use .dt accessor with datetimelike values
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_25844\513103247.py", line 17, in <module>
+    df[columna]=df['FLIGHTDATE'] + df[columna].dt.strftime('%H%M')
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\generic.py", line 5902, in __getattr__
+    return object.__getattribute__(self, name)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\accessor.py", line 182, in __get__
+    accessor_obj = self._accessor(obj)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\indexes\accessors.py", line 512, in __new__
+    raise AttributeError("Can only use .dt accessor with datetimelike values")
+AttributeError: Can only use .dt accessor with datetimelike values
+2023-05-20 00:10:18,083 - ERROR - Se ha presentado una excepcion: Can only use .dt accessor with datetimelike values
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_25844\513103247.py", line 17, in <module>
+    df[columna]=df['FLIGHTDATE'] + df[columna].dt.strftime('%H%M')
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\generic.py", line 5902, in __getattr__
+    return object.__getattribute__(self, name)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\accessor.py", line 182, in __get__
+    accessor_obj = self._accessor(obj)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\indexes\accessors.py", line 512, in __new__
+    raise AttributeError("Can only use .dt accessor with datetimelike values")
+AttributeError: Can only use .dt accessor with datetimelike values
+2023-05-20 00:11:28,332 - ERROR - Se ha presentado una excepcion: Can only use .str accessor with string values!
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_25844\2706685986.py", line 6, in <module>
+    df['DISTANCE']=df['DISTANCE'].str.replace(' miles', '')
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\generic.py", line 5902, in __getattr__
+    return object.__getattribute__(self, name)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\accessor.py", line 182, in __get__
+    accessor_obj = self._accessor(obj)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\strings\accessor.py", line 181, in __init__
+    self._inferred_dtype = self._validate(data)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\strings\accessor.py", line 235, in _validate
+    raise AttributeError("Can only use .str accessor with string values!")
+AttributeError: Can only use .str accessor with string values!
+2023-05-20 00:11:28,332 - ERROR - Se ha presentado una excepcion: Can only use .str accessor with string values!
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_25844\2706685986.py", line 6, in <module>
+    df['DISTANCE']=df['DISTANCE'].str.replace(' miles', '')
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\generic.py", line 5902, in __getattr__
+    return object.__getattribute__(self, name)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\accessor.py", line 182, in __get__
+    accessor_obj = self._accessor(obj)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\strings\accessor.py", line 181, in __init__
+    self._inferred_dtype = self._validate(data)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\strings\accessor.py", line 235, in _validate
+    raise AttributeError("Can only use .str accessor with string values!")
+AttributeError: Can only use .str accessor with string values!
+2023-05-20 00:11:28,332 - ERROR - Se ha presentado una excepcion: Can only use .str accessor with string values!
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_25844\2706685986.py", line 6, in <module>
+    df['DISTANCE']=df['DISTANCE'].str.replace(' miles', '')
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\generic.py", line 5902, in __getattr__
+    return object.__getattribute__(self, name)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\accessor.py", line 182, in __get__
+    accessor_obj = self._accessor(obj)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\strings\accessor.py", line 181, in __init__
+    self._inferred_dtype = self._validate(data)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\strings\accessor.py", line 235, in _validate
+    raise AttributeError("Can only use .str accessor with string values!")
+AttributeError: Can only use .str accessor with string values!
+2023-05-20 00:11:28,332 - ERROR - Se ha presentado una excepcion: Can only use .str accessor with string values!
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_25844\2706685986.py", line 6, in <module>
+    df['DISTANCE']=df['DISTANCE'].str.replace(' miles', '')
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\generic.py", line 5902, in __getattr__
+    return object.__getattribute__(self, name)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\accessor.py", line 182, in __get__
+    accessor_obj = self._accessor(obj)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\strings\accessor.py", line 181, in __init__
+    self._inferred_dtype = self._validate(data)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\strings\accessor.py", line 235, in _validate
+    raise AttributeError("Can only use .str accessor with string values!")
+AttributeError: Can only use .str accessor with string values!
+2023-05-20 00:11:39,753 - ERROR - Se ha presentado una excepcion: time data '0' does not match format '%H%M' (match)
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_25844\2706685986.py", line 17, in <module>
+    df[columna]=df['FLIGHTDATE'] + pd.to_datetime(df[columna], format='%H%M').dt.time
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 1064, in to_datetime
+    cache_array = _maybe_cache(arg, format, cache, convert_listlike)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 229, in _maybe_cache
+    cache_dates = convert_listlike(unique_dates, format)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 430, in _convert_listlike_datetimes
+    res = _to_datetime_with_format(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 538, in _to_datetime_with_format
+    res = _array_strptime_with_fallback(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 473, in _array_strptime_with_fallback
+    result, timezones = array_strptime(arg, fmt, exact=exact, errors=errors)
+  File "pandas\_libs\tslibs\strptime.pyx", line 150, in pandas._libs.tslibs.strptime.array_strptime
+ValueError: time data '0' does not match format '%H%M' (match)
+2023-05-20 00:11:39,753 - ERROR - Se ha presentado una excepcion: time data '0' does not match format '%H%M' (match)
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_25844\2706685986.py", line 17, in <module>
+    df[columna]=df['FLIGHTDATE'] + pd.to_datetime(df[columna], format='%H%M').dt.time
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 1064, in to_datetime
+    cache_array = _maybe_cache(arg, format, cache, convert_listlike)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 229, in _maybe_cache
+    cache_dates = convert_listlike(unique_dates, format)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 430, in _convert_listlike_datetimes
+    res = _to_datetime_with_format(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 538, in _to_datetime_with_format
+    res = _array_strptime_with_fallback(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 473, in _array_strptime_with_fallback
+    result, timezones = array_strptime(arg, fmt, exact=exact, errors=errors)
+  File "pandas\_libs\tslibs\strptime.pyx", line 150, in pandas._libs.tslibs.strptime.array_strptime
+ValueError: time data '0' does not match format '%H%M' (match)
+2023-05-20 00:11:39,753 - ERROR - Se ha presentado una excepcion: time data '0' does not match format '%H%M' (match)
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_25844\2706685986.py", line 17, in <module>
+    df[columna]=df['FLIGHTDATE'] + pd.to_datetime(df[columna], format='%H%M').dt.time
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 1064, in to_datetime
+    cache_array = _maybe_cache(arg, format, cache, convert_listlike)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 229, in _maybe_cache
+    cache_dates = convert_listlike(unique_dates, format)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 430, in _convert_listlike_datetimes
+    res = _to_datetime_with_format(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 538, in _to_datetime_with_format
+    res = _array_strptime_with_fallback(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 473, in _array_strptime_with_fallback
+    result, timezones = array_strptime(arg, fmt, exact=exact, errors=errors)
+  File "pandas\_libs\tslibs\strptime.pyx", line 150, in pandas._libs.tslibs.strptime.array_strptime
+ValueError: time data '0' does not match format '%H%M' (match)
+2023-05-20 00:11:39,753 - ERROR - Se ha presentado una excepcion: time data '0' does not match format '%H%M' (match)
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_25844\2706685986.py", line 17, in <module>
+    df[columna]=df['FLIGHTDATE'] + pd.to_datetime(df[columna], format='%H%M').dt.time
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 1064, in to_datetime
+    cache_array = _maybe_cache(arg, format, cache, convert_listlike)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 229, in _maybe_cache
+    cache_dates = convert_listlike(unique_dates, format)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 430, in _convert_listlike_datetimes
+    res = _to_datetime_with_format(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 538, in _to_datetime_with_format
+    res = _array_strptime_with_fallback(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 473, in _array_strptime_with_fallback
+    result, timezones = array_strptime(arg, fmt, exact=exact, errors=errors)
+  File "pandas\_libs\tslibs\strptime.pyx", line 150, in pandas._libs.tslibs.strptime.array_strptime
+ValueError: time data '0' does not match format '%H%M' (match)
+2023-05-20 00:11:39,753 - ERROR - Se ha presentado una excepcion: time data '0' does not match format '%H%M' (match)
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_25844\2706685986.py", line 17, in <module>
+    df[columna]=df['FLIGHTDATE'] + pd.to_datetime(df[columna], format='%H%M').dt.time
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 1064, in to_datetime
+    cache_array = _maybe_cache(arg, format, cache, convert_listlike)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 229, in _maybe_cache
+    cache_dates = convert_listlike(unique_dates, format)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 430, in _convert_listlike_datetimes
+    res = _to_datetime_with_format(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 538, in _to_datetime_with_format
+    res = _array_strptime_with_fallback(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 473, in _array_strptime_with_fallback
+    result, timezones = array_strptime(arg, fmt, exact=exact, errors=errors)
+  File "pandas\_libs\tslibs\strptime.pyx", line 150, in pandas._libs.tslibs.strptime.array_strptime
+ValueError: time data '0' does not match format '%H%M' (match)
+2023-05-20 00:13:17,040 - ERROR - Se ha presentado una excepcion: Can only use .str accessor with string values!
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_25844\2190933915.py", line 6, in <module>
+    df['DISTANCE']=df['DISTANCE'].str.replace(' miles', '')
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\generic.py", line 5902, in __getattr__
+    return object.__getattribute__(self, name)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\accessor.py", line 182, in __get__
+    accessor_obj = self._accessor(obj)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\strings\accessor.py", line 181, in __init__
+    self._inferred_dtype = self._validate(data)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\strings\accessor.py", line 235, in _validate
+    raise AttributeError("Can only use .str accessor with string values!")
+AttributeError: Can only use .str accessor with string values!
+2023-05-20 00:13:17,040 - ERROR - Se ha presentado una excepcion: Can only use .str accessor with string values!
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_25844\2190933915.py", line 6, in <module>
+    df['DISTANCE']=df['DISTANCE'].str.replace(' miles', '')
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\generic.py", line 5902, in __getattr__
+    return object.__getattribute__(self, name)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\accessor.py", line 182, in __get__
+    accessor_obj = self._accessor(obj)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\strings\accessor.py", line 181, in __init__
+    self._inferred_dtype = self._validate(data)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\strings\accessor.py", line 235, in _validate
+    raise AttributeError("Can only use .str accessor with string values!")
+AttributeError: Can only use .str accessor with string values!
+2023-05-20 00:13:17,040 - ERROR - Se ha presentado una excepcion: Can only use .str accessor with string values!
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_25844\2190933915.py", line 6, in <module>
+    df['DISTANCE']=df['DISTANCE'].str.replace(' miles', '')
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\generic.py", line 5902, in __getattr__
+    return object.__getattribute__(self, name)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\accessor.py", line 182, in __get__
+    accessor_obj = self._accessor(obj)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\strings\accessor.py", line 181, in __init__
+    self._inferred_dtype = self._validate(data)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\strings\accessor.py", line 235, in _validate
+    raise AttributeError("Can only use .str accessor with string values!")
+AttributeError: Can only use .str accessor with string values!
+2023-05-20 00:13:17,040 - ERROR - Se ha presentado una excepcion: Can only use .str accessor with string values!
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_25844\2190933915.py", line 6, in <module>
+    df['DISTANCE']=df['DISTANCE'].str.replace(' miles', '')
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\generic.py", line 5902, in __getattr__
+    return object.__getattribute__(self, name)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\accessor.py", line 182, in __get__
+    accessor_obj = self._accessor(obj)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\strings\accessor.py", line 181, in __init__
+    self._inferred_dtype = self._validate(data)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\strings\accessor.py", line 235, in _validate
+    raise AttributeError("Can only use .str accessor with string values!")
+AttributeError: Can only use .str accessor with string values!
+2023-05-20 00:13:17,040 - ERROR - Se ha presentado una excepcion: Can only use .str accessor with string values!
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_25844\2190933915.py", line 6, in <module>
+    df['DISTANCE']=df['DISTANCE'].str.replace(' miles', '')
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\generic.py", line 5902, in __getattr__
+    return object.__getattribute__(self, name)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\accessor.py", line 182, in __get__
+    accessor_obj = self._accessor(obj)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\strings\accessor.py", line 181, in __init__
+    self._inferred_dtype = self._validate(data)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\strings\accessor.py", line 235, in _validate
+    raise AttributeError("Can only use .str accessor with string values!")
+AttributeError: Can only use .str accessor with string values!
+2023-05-20 00:13:32,201 - ERROR - Se ha presentado una excepcion: time data '0' does not match format '%H%M' (match)
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_25844\2190933915.py", line 18, in <module>
+    df[columna]=df['FLIGHTDATE'] + pd.to_datetime(df[columna], format='%H%M').dt.time
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 1064, in to_datetime
+    cache_array = _maybe_cache(arg, format, cache, convert_listlike)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 229, in _maybe_cache
+    cache_dates = convert_listlike(unique_dates, format)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 430, in _convert_listlike_datetimes
+    res = _to_datetime_with_format(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 538, in _to_datetime_with_format
+    res = _array_strptime_with_fallback(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 473, in _array_strptime_with_fallback
+    result, timezones = array_strptime(arg, fmt, exact=exact, errors=errors)
+  File "pandas\_libs\tslibs\strptime.pyx", line 150, in pandas._libs.tslibs.strptime.array_strptime
+ValueError: time data '0' does not match format '%H%M' (match)
+2023-05-20 00:13:32,201 - ERROR - Se ha presentado una excepcion: time data '0' does not match format '%H%M' (match)
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_25844\2190933915.py", line 18, in <module>
+    df[columna]=df['FLIGHTDATE'] + pd.to_datetime(df[columna], format='%H%M').dt.time
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 1064, in to_datetime
+    cache_array = _maybe_cache(arg, format, cache, convert_listlike)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 229, in _maybe_cache
+    cache_dates = convert_listlike(unique_dates, format)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 430, in _convert_listlike_datetimes
+    res = _to_datetime_with_format(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 538, in _to_datetime_with_format
+    res = _array_strptime_with_fallback(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 473, in _array_strptime_with_fallback
+    result, timezones = array_strptime(arg, fmt, exact=exact, errors=errors)
+  File "pandas\_libs\tslibs\strptime.pyx", line 150, in pandas._libs.tslibs.strptime.array_strptime
+ValueError: time data '0' does not match format '%H%M' (match)
+2023-05-20 00:13:32,201 - ERROR - Se ha presentado una excepcion: time data '0' does not match format '%H%M' (match)
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_25844\2190933915.py", line 18, in <module>
+    df[columna]=df['FLIGHTDATE'] + pd.to_datetime(df[columna], format='%H%M').dt.time
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 1064, in to_datetime
+    cache_array = _maybe_cache(arg, format, cache, convert_listlike)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 229, in _maybe_cache
+    cache_dates = convert_listlike(unique_dates, format)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 430, in _convert_listlike_datetimes
+    res = _to_datetime_with_format(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 538, in _to_datetime_with_format
+    res = _array_strptime_with_fallback(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 473, in _array_strptime_with_fallback
+    result, timezones = array_strptime(arg, fmt, exact=exact, errors=errors)
+  File "pandas\_libs\tslibs\strptime.pyx", line 150, in pandas._libs.tslibs.strptime.array_strptime
+ValueError: time data '0' does not match format '%H%M' (match)
+2023-05-20 00:13:32,201 - ERROR - Se ha presentado una excepcion: time data '0' does not match format '%H%M' (match)
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_25844\2190933915.py", line 18, in <module>
+    df[columna]=df['FLIGHTDATE'] + pd.to_datetime(df[columna], format='%H%M').dt.time
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 1064, in to_datetime
+    cache_array = _maybe_cache(arg, format, cache, convert_listlike)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 229, in _maybe_cache
+    cache_dates = convert_listlike(unique_dates, format)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 430, in _convert_listlike_datetimes
+    res = _to_datetime_with_format(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 538, in _to_datetime_with_format
+    res = _array_strptime_with_fallback(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 473, in _array_strptime_with_fallback
+    result, timezones = array_strptime(arg, fmt, exact=exact, errors=errors)
+  File "pandas\_libs\tslibs\strptime.pyx", line 150, in pandas._libs.tslibs.strptime.array_strptime
+ValueError: time data '0' does not match format '%H%M' (match)
+2023-05-20 00:13:32,201 - ERROR - Se ha presentado una excepcion: time data '0' does not match format '%H%M' (match)
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_25844\2190933915.py", line 18, in <module>
+    df[columna]=df['FLIGHTDATE'] + pd.to_datetime(df[columna], format='%H%M').dt.time
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 1064, in to_datetime
+    cache_array = _maybe_cache(arg, format, cache, convert_listlike)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 229, in _maybe_cache
+    cache_dates = convert_listlike(unique_dates, format)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 430, in _convert_listlike_datetimes
+    res = _to_datetime_with_format(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 538, in _to_datetime_with_format
+    res = _array_strptime_with_fallback(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 473, in _array_strptime_with_fallback
+    result, timezones = array_strptime(arg, fmt, exact=exact, errors=errors)
+  File "pandas\_libs\tslibs\strptime.pyx", line 150, in pandas._libs.tslibs.strptime.array_strptime
+ValueError: time data '0' does not match format '%H%M' (match)
+2023-05-20 00:13:32,201 - ERROR - Se ha presentado una excepcion: time data '0' does not match format '%H%M' (match)
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_25844\2190933915.py", line 18, in <module>
+    df[columna]=df['FLIGHTDATE'] + pd.to_datetime(df[columna], format='%H%M').dt.time
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 1064, in to_datetime
+    cache_array = _maybe_cache(arg, format, cache, convert_listlike)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 229, in _maybe_cache
+    cache_dates = convert_listlike(unique_dates, format)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 430, in _convert_listlike_datetimes
+    res = _to_datetime_with_format(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 538, in _to_datetime_with_format
+    res = _array_strptime_with_fallback(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 473, in _array_strptime_with_fallback
+    result, timezones = array_strptime(arg, fmt, exact=exact, errors=errors)
+  File "pandas\_libs\tslibs\strptime.pyx", line 150, in pandas._libs.tslibs.strptime.array_strptime
+ValueError: time data '0' does not match format '%H%M' (match)
+2023-05-20 00:16:26,958 - ERROR - Se ha presentado una excepcion: time data '0' does not match format '%H%M' (match)
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_25844\2190933915.py", line 18, in <module>
+    df[columna]=df['FLIGHTDATE'] + pd.to_datetime(df[columna], format='%H%M').dt.time
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 1064, in to_datetime
+    cache_array = _maybe_cache(arg, format, cache, convert_listlike)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 229, in _maybe_cache
+    cache_dates = convert_listlike(unique_dates, format)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 430, in _convert_listlike_datetimes
+    res = _to_datetime_with_format(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 538, in _to_datetime_with_format
+    res = _array_strptime_with_fallback(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 473, in _array_strptime_with_fallback
+    result, timezones = array_strptime(arg, fmt, exact=exact, errors=errors)
+  File "pandas\_libs\tslibs\strptime.pyx", line 150, in pandas._libs.tslibs.strptime.array_strptime
+ValueError: time data '0' does not match format '%H%M' (match)
+2023-05-20 00:16:26,958 - ERROR - Se ha presentado una excepcion: time data '0' does not match format '%H%M' (match)
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_25844\2190933915.py", line 18, in <module>
+    df[columna]=df['FLIGHTDATE'] + pd.to_datetime(df[columna], format='%H%M').dt.time
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 1064, in to_datetime
+    cache_array = _maybe_cache(arg, format, cache, convert_listlike)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 229, in _maybe_cache
+    cache_dates = convert_listlike(unique_dates, format)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 430, in _convert_listlike_datetimes
+    res = _to_datetime_with_format(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 538, in _to_datetime_with_format
+    res = _array_strptime_with_fallback(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 473, in _array_strptime_with_fallback
+    result, timezones = array_strptime(arg, fmt, exact=exact, errors=errors)
+  File "pandas\_libs\tslibs\strptime.pyx", line 150, in pandas._libs.tslibs.strptime.array_strptime
+ValueError: time data '0' does not match format '%H%M' (match)
+2023-05-20 00:16:26,958 - ERROR - Se ha presentado una excepcion: time data '0' does not match format '%H%M' (match)
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_25844\2190933915.py", line 18, in <module>
+    df[columna]=df['FLIGHTDATE'] + pd.to_datetime(df[columna], format='%H%M').dt.time
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 1064, in to_datetime
+    cache_array = _maybe_cache(arg, format, cache, convert_listlike)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 229, in _maybe_cache
+    cache_dates = convert_listlike(unique_dates, format)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 430, in _convert_listlike_datetimes
+    res = _to_datetime_with_format(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 538, in _to_datetime_with_format
+    res = _array_strptime_with_fallback(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 473, in _array_strptime_with_fallback
+    result, timezones = array_strptime(arg, fmt, exact=exact, errors=errors)
+  File "pandas\_libs\tslibs\strptime.pyx", line 150, in pandas._libs.tslibs.strptime.array_strptime
+ValueError: time data '0' does not match format '%H%M' (match)
+2023-05-20 00:16:26,958 - ERROR - Se ha presentado una excepcion: time data '0' does not match format '%H%M' (match)
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_25844\2190933915.py", line 18, in <module>
+    df[columna]=df['FLIGHTDATE'] + pd.to_datetime(df[columna], format='%H%M').dt.time
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 1064, in to_datetime
+    cache_array = _maybe_cache(arg, format, cache, convert_listlike)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 229, in _maybe_cache
+    cache_dates = convert_listlike(unique_dates, format)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 430, in _convert_listlike_datetimes
+    res = _to_datetime_with_format(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 538, in _to_datetime_with_format
+    res = _array_strptime_with_fallback(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 473, in _array_strptime_with_fallback
+    result, timezones = array_strptime(arg, fmt, exact=exact, errors=errors)
+  File "pandas\_libs\tslibs\strptime.pyx", line 150, in pandas._libs.tslibs.strptime.array_strptime
+ValueError: time data '0' does not match format '%H%M' (match)
+2023-05-20 00:16:26,958 - ERROR - Se ha presentado una excepcion: time data '0' does not match format '%H%M' (match)
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_25844\2190933915.py", line 18, in <module>
+    df[columna]=df['FLIGHTDATE'] + pd.to_datetime(df[columna], format='%H%M').dt.time
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 1064, in to_datetime
+    cache_array = _maybe_cache(arg, format, cache, convert_listlike)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 229, in _maybe_cache
+    cache_dates = convert_listlike(unique_dates, format)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 430, in _convert_listlike_datetimes
+    res = _to_datetime_with_format(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 538, in _to_datetime_with_format
+    res = _array_strptime_with_fallback(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 473, in _array_strptime_with_fallback
+    result, timezones = array_strptime(arg, fmt, exact=exact, errors=errors)
+  File "pandas\_libs\tslibs\strptime.pyx", line 150, in pandas._libs.tslibs.strptime.array_strptime
+ValueError: time data '0' does not match format '%H%M' (match)
+2023-05-20 00:16:26,958 - ERROR - Se ha presentado una excepcion: time data '0' does not match format '%H%M' (match)
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_25844\2190933915.py", line 18, in <module>
+    df[columna]=df['FLIGHTDATE'] + pd.to_datetime(df[columna], format='%H%M').dt.time
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 1064, in to_datetime
+    cache_array = _maybe_cache(arg, format, cache, convert_listlike)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 229, in _maybe_cache
+    cache_dates = convert_listlike(unique_dates, format)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 430, in _convert_listlike_datetimes
+    res = _to_datetime_with_format(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 538, in _to_datetime_with_format
+    res = _array_strptime_with_fallback(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 473, in _array_strptime_with_fallback
+    result, timezones = array_strptime(arg, fmt, exact=exact, errors=errors)
+  File "pandas\_libs\tslibs\strptime.pyx", line 150, in pandas._libs.tslibs.strptime.array_strptime
+ValueError: time data '0' does not match format '%H%M' (match)
+2023-05-20 00:16:26,958 - ERROR - Se ha presentado una excepcion: time data '0' does not match format '%H%M' (match)
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_25844\2190933915.py", line 18, in <module>
+    df[columna]=df['FLIGHTDATE'] + pd.to_datetime(df[columna], format='%H%M').dt.time
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 1064, in to_datetime
+    cache_array = _maybe_cache(arg, format, cache, convert_listlike)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 229, in _maybe_cache
+    cache_dates = convert_listlike(unique_dates, format)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 430, in _convert_listlike_datetimes
+    res = _to_datetime_with_format(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 538, in _to_datetime_with_format
+    res = _array_strptime_with_fallback(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 473, in _array_strptime_with_fallback
+    result, timezones = array_strptime(arg, fmt, exact=exact, errors=errors)
+  File "pandas\_libs\tslibs\strptime.pyx", line 150, in pandas._libs.tslibs.strptime.array_strptime
+ValueError: time data '0' does not match format '%H%M' (match)
+2023-05-20 00:16:26,958 - ERROR - Se ha presentado una excepcion: time data '0' does not match format '%H%M' (match)
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_25844\2190933915.py", line 18, in <module>
+    df[columna]=df['FLIGHTDATE'] + pd.to_datetime(df[columna], format='%H%M').dt.time
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 1064, in to_datetime
+    cache_array = _maybe_cache(arg, format, cache, convert_listlike)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 229, in _maybe_cache
+    cache_dates = convert_listlike(unique_dates, format)
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 430, in _convert_listlike_datetimes
+    res = _to_datetime_with_format(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 538, in _to_datetime_with_format
+    res = _array_strptime_with_fallback(
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\tools\datetimes.py", line 473, in _array_strptime_with_fallback
+    result, timezones = array_strptime(arg, fmt, exact=exact, errors=errors)
+  File "pandas\_libs\tslibs\strptime.pyx", line 150, in pandas._libs.tslibs.strptime.array_strptime
+ValueError: time data '0' does not match format '%H%M' (match)
+2023-05-20 05:05:14,138 - ERROR - Se ha presentado una excepcion: 'Series' object has no attribute 'strftime'
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_16728\649345370.py", line 8, in <module>
+    df['TAXIOUT']=pd.to_timedelta(df['TAXIOUT'], unit='min',errors='ignore').strftime('%M')
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\generic.py", line 5902, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'Series' object has no attribute 'strftime'
+2023-05-20 05:05:14,138 - ERROR - Se ha presentado una excepcion: 'Series' object has no attribute 'strftime'
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_16728\649345370.py", line 8, in <module>
+    df['TAXIOUT']=pd.to_timedelta(df['TAXIOUT'], unit='min',errors='ignore').strftime('%M')
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\generic.py", line 5902, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'Series' object has no attribute 'strftime'
+2023-05-20 05:06:09,648 - ERROR - Se ha presentado una excepcion: 'Series' object has no attribute 'as_unit'
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_16728\2444189440.py", line 9, in <module>
+    df['TAXIOUT']=df['TAXIOUT'].as_unit()
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\generic.py", line 5902, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'Series' object has no attribute 'as_unit'
+2023-05-20 05:06:09,648 - ERROR - Se ha presentado una excepcion: 'Series' object has no attribute 'as_unit'
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_16728\2444189440.py", line 9, in <module>
+    df['TAXIOUT']=df['TAXIOUT'].as_unit()
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\generic.py", line 5902, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'Series' object has no attribute 'as_unit'
+2023-05-20 05:06:09,648 - ERROR - Se ha presentado una excepcion: 'Series' object has no attribute 'as_unit'
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_16728\2444189440.py", line 9, in <module>
+    df['TAXIOUT']=df['TAXIOUT'].as_unit()
+  File "C:\Users\alejo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\generic.py", line 5902, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'Series' object has no attribute 'as_unit'
+2023-05-20 05:10:21,723 - ERROR - Se ha presentado una excepcion: 'TimedeltaProperties' object has no attribute 'minute'
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_16728\4007228666.py", line 9, in <module>
+    df['TAXIOUT']=df['TAXIOUT'].dt.minute
+AttributeError: 'TimedeltaProperties' object has no attribute 'minute'
+2023-05-20 05:10:21,723 - ERROR - Se ha presentado una excepcion: 'TimedeltaProperties' object has no attribute 'minute'
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_16728\4007228666.py", line 9, in <module>
+    df['TAXIOUT']=df['TAXIOUT'].dt.minute
+AttributeError: 'TimedeltaProperties' object has no attribute 'minute'
+2023-05-20 05:10:21,723 - ERROR - Se ha presentado una excepcion: 'TimedeltaProperties' object has no attribute 'minute'
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_16728\4007228666.py", line 9, in <module>
+    df['TAXIOUT']=df['TAXIOUT'].dt.minute
+AttributeError: 'TimedeltaProperties' object has no attribute 'minute'
+2023-05-20 05:10:21,723 - ERROR - Se ha presentado una excepcion: 'TimedeltaProperties' object has no attribute 'minute'
+Traceback (most recent call last):
+  File "C:\Users\alejo\AppData\Local\Temp\ipykernel_16728\4007228666.py", line 9, in <module>
+    df['TAXIOUT']=df['TAXIOUT'].dt.minute
+AttributeError: 'TimedeltaProperties' object has no attribute 'minute'
