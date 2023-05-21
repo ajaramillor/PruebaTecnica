@@ -42,10 +42,8 @@ table FACT_VUELOS {
 }
 
 table DIM_ESTADOS {
-  state string [primary key]
+  statecode string [primary key]
   statename string
-  tailnum string
-  flightnum int64
 }
 
 table DIM_AEROLINEAS {
