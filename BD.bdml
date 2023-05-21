@@ -1,0 +1,68 @@
+// Use DBML to define your database structure
+// Docs: https://dbml.dbdiagram.io/docs
+
+table DIM_AEROPUERTOS {
+  airportcode string [primary key]
+  airportname string
+  cityname string
+}
+
+table FACT_VUELOS {
+    transactionid int64 [primary key]
+    flightdate timestamp
+    airlinecode string
+    airlinename string
+    tailnum string
+    flightnum int64
+    originairportcode string
+    origairportname string
+    origincityname string
+    originstate string
+    originstatename string
+    destairportcode string
+    destairportname string
+    destcityname string
+    deststate string
+    deststatename string
+    crsdeptime timestamp
+    deptime timestamp
+    depdelay float
+    taxiout float
+    wheelsoff timestamp
+    wheelson timestamp
+    taxiin float
+    crsarrtime timestamp
+    arrtime timestamp
+    arrdelay float
+    crselapsedtime float
+    actualelapsedtime float
+    cancelled bool
+    diverted bool
+    distance int64
+}
+
+table DIM_ESTADOS {
+  state string [primary key]
+  statename string
+  tailnum string
+  flightnum int64
+}
+
+table DIM_AEROLINEAS {
+  airlinecode string [primary key]
+  airlinename string
+}
+
+
+
+
+
+Ref: "DIM_AEROPUERTOS"."airportcode" < "FACT_VUELOS"."originairportcode"
+
+Ref: "DIM_AEROPUERTOS"."airportcode" < "FACT_VUELOS"."destairportcode"
+
+Ref: "DIM_ESTADOS"."state" < "FACT_VUELOS"."originstate"
+
+Ref: "DIM_ESTADOS"."state" < "FACT_VUELOS"."deststate"
+
+Ref: "DIM_AEROLINEAS"."airlinecode" < "FACT_VUELOS"."airlinecode"
