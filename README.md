@@ -51,6 +51,8 @@ Para lograr los objetivos de este proyecto, se propone la siguiente solución:
 4. Configurar la base de datos para optimizar el rendimiento y la escalabilidad.
 5. Implementar un proceso de verificación de calidad de datos para garantizar la precisión y la consistencia de los datos en la base de datos.
 
+![image](https://github.com/ajaramillor/PruebaTecnica/assets/98030147/ed98fd4b-8a19-4f04-93e0-98557788504c)
+
 ## Factores de riesgo
 
 Los principales riesgos asociados con este proyecto incluyen:
