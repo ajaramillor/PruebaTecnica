@@ -1,2 +1,3 @@
 Datasets/flights.csv
 .gitignore
+Datasets/flights_clean.csv
