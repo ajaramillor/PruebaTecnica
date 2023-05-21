@@ -50,6 +50,8 @@ El proceso constará de las siguientes etapas:
 3. **Creación de la base de datos:** diseñar y construir una arquitectura de base de datos escalable que pueda manejar grandes cantidades de datos y permitir futuras expansiones. Se utiliza un motor de base de datos relacional para garantizar la integridad de los datos y se implementa una estructura de tabla eficiente para optimizar el rendimiento.
 4. **Creación del dashboard:** crear un dashboard de visualización de datos para la toma de decisiones de la aerolínea utilizando los datos almacenados en la base de datos. El dashboard se construye utilizando una herramienta de visualización de datos como Tableau o Power BI y se personaliza para satisfacer las necesidades específicas de la aerolínea.
 
+![image](https://github.com/ajaramillor/PruebaTecnica/assets/98030147/ed98fd4b-8a19-4f04-93e0-98557788504c)
+
 ## Factores de riesgo
 
 Los principales riesgos asociados con este proyecto incluyen:
