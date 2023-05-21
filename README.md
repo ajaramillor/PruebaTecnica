@@ -83,7 +83,9 @@ Teniendo claro el propósito del proyecto que es alimentar un dashboard para la 
 - Facilidad de mantenimiento: El modelo en estrella es fácil de mantener y actualizar. Si se necesita agregar una nueva dimensión o modificar una existente, se pueden realizar cambios en las tablas de dimensiones sin afectar la tabla de hechos. Esto evita la necesidad de modificar todas las consultas y asegura que el dashboard siga funcionando sin interrupciones.
 - Escalabilidad: El modelo en estrella es altamente escalable. A medida que se agregan más datos al sistema, se pueden agregar nuevas tablas de hechos y dimensiones sin afectar el rendimiento general. Esto permite que el dashboard crezca a medida que crecen las necesidades de la organización sin comprometer la velocidad de respuesta.
 
-A continuación se presenta el diagrama de la base de datos: 
+A continuación se presenta el diagrama de la base de datos:
+![bd](https://github.com/ajaramillor/PruebaTecnica/assets/98030147/0bc4138e-1daa-4991-938a-885bb7ca294f)
+
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
