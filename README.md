@@ -77,7 +77,7 @@ A continuación se incluye la descripción general de cada uno de los pasos y el
 
 ## Limpieza y carga de los datos
 
-Los datos se encuentran en el archivo comprimido [flights](flights.zip), contenido en el archivo comprimido flights.zip. Se hace de esta manera porque el archivo descomprimido supera el límite de Github. A continuación, se procede a la limpieza de datos en el Jupyter notebook [limpieza](limpieza.ipynb).
+Los datos se encuentran en el archivo comprimido [flights](flights.zip), contenido en el archivo comprimido flights.zip. Se hace de esta manera porque el archivo descomprimido supera el límite de Github. A continuación, se procede a la limpieza de datos en el Jupyter notebook [limpieza](Limpieza.ipynb).
 
 ## Diseño DB
 
@@ -95,7 +95,7 @@ A continuación se presenta el diagrama de la base de datos:
 
 El proceso de carga se realiza con otro Jupyter notebook [Transformacion_carga](Transformacion_carga.ipynb) que permite dividir el dataset limpio en las distintas tablas de la base de datos, posteriormente por medio de la API de GCP se suben los dataframes y se forman las dimensiones y la tabla de hechos (fact table) para el posterior análisis.
 
-![image](https://github.com/ajaramillor/PruebaTecnica/assets/98030147/5f52bd13-7ef2-4ac0-b427-abac92be5056)
+![image](https://github.com/ajaramillor/PruebaTecnica/assets/98030147/f6056228-cc91-4890-8c87-6f5bf0265e33)
 
 ## ETL
 
@@ -107,15 +107,21 @@ Además, la Cloud Function se beneficia de la escalabilidad y disponibilidad pro
 
 Para fines prácticos de la prueba y debido a que las Cloud Functions tienen un costo se presentará el proceso en un Jupyter notebook [ETL](ETL.ipynb) pero su código exportado a .py es identico al usado por la Cloud Function.
 
+![image](https://github.com/ajaramillor/PruebaTecnica/assets/98030147/fec0c35d-c93f-4f4c-81d0-94857793dee0)
+
+
 ## Dashboard
 
 El último paso de la solución propuesta es la creación del dashboard final, en este caso se utiliza el visualizador gratuito de GCP, Looker Studio. A continuación se muestra el preview y el link donde se puede acceder de manera libre al dashboard. 
+
+![image](https://github.com/ajaramillor/PruebaTecnica/assets/98030147/8da14cc0-af21-46d3-a3e7-500cadaf2cef)
 
 [Link dashboard](https://lookerstudio.google.com/s/o0uhH7ydH4Q)
 
 # Pruebas unitarias
 
 Para verificar las funciones que se crean en el proceso se realizan pruebas unitarias con Pytest, en el repositorio se encuentra el archivo [test_funciones](funciones.py) para verificarlas. Las funciones que dependen de la API de Google no se probaron pues requiere un desarrollo diferente fuera del alcance de esta prueba como creacion de mocks de la API con Unittest.
+![image](https://github.com/ajaramillor/PruebaTecnica/assets/98030147/b307f127-a009-4def-b193-3782af1e5888)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
