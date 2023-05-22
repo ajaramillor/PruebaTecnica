@@ -28,6 +28,7 @@
   - [Limpieza y carga de los datos](#limpieza-y-carga-de-los-datos)
   - [Diseño DB](#diseño-db)
   - [CARGA DE DATOS](#carga-de-datos)
+  - [ETL](#etl)
 
 
 
@@ -90,10 +91,19 @@ A continuación se presenta el diagrama de la base de datos:
 
 ## CARGA DE DATOS
 
-El proceso de carga se realiza con otro Jupyter notebook [Transformacion_carga.ipynb](transformacion_carga) que permite dividir el dataset limpio en las distintas tablas de la base de datos, posteriormente por medio de la API de GCP se suben los dataframes y se forman las dimensiones y la tabla de hechos (fact table) para el posterior análisis.
+El proceso de carga se realiza con otro Jupyter notebook [Transformacion_carga](Transformacion_carga.ipynb) que permite dividir el dataset limpio en las distintas tablas de la base de datos, posteriormente por medio de la API de GCP se suben los dataframes y se forman las dimensiones y la tabla de hechos (fact table) para el posterior análisis.
 
 ![image](https://github.com/ajaramillor/PruebaTecnica/assets/98030147/5f52bd13-7ef2-4ac0-b427-abac92be5056)
 
+## ETL
+
+Para el proceso ETL (Extracción, Transformación y Carga) se propone una una Cloud Function de Google que es una solución escalable y eficiente para la integración de datos. Este enfoque aprovecha la infraestructura y los servicios de Google Cloud Platform (GCP) además permite solo pagar por uso y optimizar recursos vs una solución local.
+
+Es importante mencionar que la Cloud Function de Google es una función sin servidor que se ejecuta de manera automatizada en respuesta a eventos específicos, como cambios en los datos de origen o programados de acuerdo a una frecuencia determinada. Esto permite la ejecución periódica y programada del proceso ETL, asegurando la actualización constante de los datos y la generación de insights en tiempo real.
+
+Además, la Cloud Function se beneficia de la escalabilidad y disponibilidad proporcionadas por GCP. Esto significa que puede manejar grandes volúmenes de datos y adaptarse a cambios en la demanda sin problemas, lo que garantiza un rendimiento óptimo del proceso ETL.
+
+Para fines prácticos de la prueba y debido a que las Cloud Functions tienen un costo se presentará el proceso en un Jupyter notebook [ETL](ETL.ipynb) pero su código exportado a .py es identico al usado por la Cloud Function.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
