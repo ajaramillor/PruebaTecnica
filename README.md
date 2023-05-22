@@ -30,6 +30,7 @@
   - [CARGA DE DATOS](#carga-de-datos)
 
 
+
 # Planteamiento del problema
 
 Como prueba técnica se pide el planteamiento y diseño de una solución de procesamiento de datos con el fin de verificar las capacidades técnicas y la capacidad de trabajar bajo presión.
