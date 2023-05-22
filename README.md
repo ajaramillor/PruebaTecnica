@@ -27,8 +27,10 @@
 - [Proceso](#proceso)
   - [Limpieza y carga de los datos](#limpieza-y-carga-de-los-datos)
   - [Diseño DB](#diseño-db)
-  - [CARGA DE DATOS](#carga-de-datos)
+  - [Carga de datos](#carga-de-datos)
   - [ETL](#etl)
+  - [Dashboard](#dashboard)
+- [Pruebas unitarias](#pruebas-unitarias)
 
 
 
@@ -109,11 +111,11 @@ Para fines prácticos de la prueba y debido a que las Cloud Functions tienen un 
 
 El último paso de la solución propuesta es la creación del dashboard final, en este caso se utiliza el visualizador gratuito de GCP, Looker Studio. A continuación se muestra el preview y el link donde se puede acceder de manera libre al dashboard. 
 
-[](https://lookerstudio.google.com/s/o0uhH7ydH4Q)
+[Link dashboard](https://lookerstudio.google.com/s/o0uhH7ydH4Q)
 
 # Pruebas unitarias
 
-Para verificar las funciones que se crean en el proceso se realizan pruebas unitarias con Pytest, en el repositorio se encuentra el archivo [test_funciones.py] para verificarlas. Las funciones que dependen de la API de Google no se probaron pues requiere un desarrollo diferente fuera del alcance de esta prueba como creacion de mocks de la API con Unittest.
+Para verificar las funciones que se crean en el proceso se realizan pruebas unitarias con Pytest, en el repositorio se encuentra el archivo [test_funciones](funciones.py) para verificarlas. Las funciones que dependen de la API de Google no se probaron pues requiere un desarrollo diferente fuera del alcance de esta prueba como creacion de mocks de la API con Unittest.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
