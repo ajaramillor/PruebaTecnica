@@ -71,11 +71,11 @@ El éxito de este proyecto se medirá por la capacidad de la base de datos para 
 
 # Proceso
 
-A continuación se incluye la descripción general de cada uno de los pasos y el link a su respectivo notebook.
+A continuación se incluye la descripción general de cada uno de los pasos y el link a su respectivo notebook. Se debe destacar que las funciones se dejan en el notebook por facilidad de lectura, se podrían llamar directamente desde el archivo [funciones](funciones.py) pero sería más difícil la lectura del documento.
 
 ## Limpieza y carga de los datos
 
-Los datos se encuentran en el archivo comprimido [flights.zip](datasets), contenido en el archivo comprimido flights.zip. Se hace de esta manera porque el archivo descomprimido supera el límite de Github. A continuación, se procede a la limpieza de datos en el Jupyter notebook [limpieza](limpieza.ipynb).
+Los datos se encuentran en el archivo comprimido [flights](flights.zip), contenido en el archivo comprimido flights.zip. Se hace de esta manera porque el archivo descomprimido supera el límite de Github. A continuación, se procede a la limpieza de datos en el Jupyter notebook [limpieza](limpieza.ipynb).
 
 ## Diseño DB
 
@@ -89,7 +89,7 @@ Teniendo claro el propósito del proyecto que es alimentar un dashboard para la 
 A continuación se presenta el diagrama de la base de datos:
 ![bd](https://github.com/ajaramillor/PruebaTecnica/assets/98030147/3b0ac13a-ad58-4a0e-b584-7286436d9b10)
 
-## CARGA DE DATOS
+## Carga de datos
 
 El proceso de carga se realiza con otro Jupyter notebook [Transformacion_carga](Transformacion_carga.ipynb) que permite dividir el dataset limpio en las distintas tablas de la base de datos, posteriormente por medio de la API de GCP se suben los dataframes y se forman las dimensiones y la tabla de hechos (fact table) para el posterior análisis.
 
@@ -105,34 +105,16 @@ Además, la Cloud Function se beneficia de la escalabilidad y disponibilidad pro
 
 Para fines prácticos de la prueba y debido a que las Cloud Functions tienen un costo se presentará el proceso en un Jupyter notebook [ETL](ETL.ipynb) pero su código exportado a .py es identico al usado por la Cloud Function.
 
+## Dashboard
+
+El último paso de la solución propuesta es la creación del dashboard final, en este caso se utiliza el visualizador gratuito de GCP, Looker Studio. A continuación se muestra el preview y el link donde se puede acceder de manera libre al dashboard. 
+
+[](https://lookerstudio.google.com/s/o0uhH7ydH4Q)
+
+# Pruebas unitarias
+
+Para verificar las funciones que se crean en el proceso se realizan pruebas unitarias con Pytest, en el repositorio se encuentra el archivo [test_funciones.py] para verificarlas. Las funciones que dependen de la API de Google no se probaron pues requiere un desarrollo diferente fuera del alcance de esta prueba como creacion de mocks de la API con Unittest.
+
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/ajaramillor/PruebaTecnica/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/ajaramillor/PruebaTecnica/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/ajaramillor/PruebaTecnica/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/ajaramillor/PruebaTecnica/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/ajaramillor/PruebaTecnica/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/alejandro-jaramillo-rivas/
-[product-screenshot]: images/screenshot.png
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
