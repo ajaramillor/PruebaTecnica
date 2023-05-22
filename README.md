@@ -27,6 +27,7 @@
 - [Proceso](#proceso)
   - [Limpieza y carga de los datos](#limpieza-y-carga-de-los-datos)
   - [Diseño DB](#diseño-db)
+  - [CARGA DE DATOS](#carga-de-datos)
 
 
 # Planteamiento del problema
@@ -49,8 +50,6 @@ El proceso constará de las siguientes etapas:
 2. **Limpieza de datos:** realizar un proceso de limpieza de datos para garantizar que los datos sean precisos y consistentes. Esto incluye la eliminación de datos duplicados, la corrección de errores tipográficos y la normalización de los datos.
 3. **Creación de la base de datos:** diseñar y construir una arquitectura de base de datos escalable que pueda manejar grandes cantidades de datos y permitir futuras expansiones. Se utiliza un motor de base de datos relacional para garantizar la integridad de los datos y se implementa una estructura de tabla eficiente para optimizar el rendimiento.
 4. **Creación del dashboard:** crear un dashboard de visualización de datos para la toma de decisiones de la aerolínea utilizando los datos almacenados en la base de datos. El dashboard se construye utilizando una herramienta de visualización de datos como Tableau o Power BI y se personaliza para satisfacer las necesidades específicas de la aerolínea.
-
-![image](https://github.com/ajaramillor/PruebaTecnica/assets/98030147/ed98fd4b-8a19-4f04-93e0-98557788504c)
 
 ![image](https://github.com/ajaramillor/PruebaTecnica/assets/98030147/ed98fd4b-8a19-4f04-93e0-98557788504c)
 
@@ -87,6 +86,12 @@ Teniendo claro el propósito del proyecto que es alimentar un dashboard para la 
 
 A continuación se presenta el diagrama de la base de datos:
 ![bd](https://github.com/ajaramillor/PruebaTecnica/assets/98030147/3b0ac13a-ad58-4a0e-b584-7286436d9b10)
+
+## CARGA DE DATOS
+
+El proceso de carga se realiza con otro Jupyter notebook [Transformacion_carga.ipynb](transformacion_carga) que permite dividir el dataset limpio en las distintas tablas de la base de datos, posteriormente por medio de la API de GCP se suben los dataframes y se forman las dimensiones y la tabla de hechos (fact table) para el posterior análisis.
+
+![image](https://github.com/ajaramillor/PruebaTecnica/assets/98030147/5f52bd13-7ef2-4ac0-b427-abac92be5056)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
