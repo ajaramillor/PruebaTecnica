@@ -92,6 +92,9 @@ A continuación se presenta el diagrama de la base de datos:
 
 El proceso de carga se realiza con otro Jupyter notebook [Transformacion_carga.ipynb](transformacion_carga) que permite dividir el dataset limpio en las distintas tablas de la base de datos, posteriormente por medio de la API de GCP se suben los dataframes y se forman las dimensiones y la tabla de hechos (fact table) para el posterior análisis.
 
+![image](https://github.com/ajaramillor/PruebaTecnica/assets/98030147/5f52bd13-7ef2-4ac0-b427-abac92be5056)
+
+
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
