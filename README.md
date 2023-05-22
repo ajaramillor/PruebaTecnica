@@ -27,6 +27,7 @@
 - [Proceso](#proceso)
   - [Limpieza y carga de los datos](#limpieza-y-carga-de-los-datos)
   - [Diseño DB](#diseño-db)
+  - [CARGA DE DATOS](#carga-de-datos)
 
 
 # Planteamiento del problema
@@ -86,6 +87,9 @@ Teniendo claro el propósito del proyecto que es alimentar un dashboard para la 
 A continuación se presenta el diagrama de la base de datos:
 ![bd](https://github.com/ajaramillor/PruebaTecnica/assets/98030147/3b0ac13a-ad58-4a0e-b584-7286436d9b10)
 
+## CARGA DE DATOS
+
+El proceso de carga se realiza con otro Jupyter notebook [Transformacion_carga.ipynb](transformacion_carga) que permite dividir el dataset limpio en las distintas tablas de la base de datos, posteriormente por medio de la API de GCP se suben los dataframes y se forman las dimensiones y la tabla de hechos (fact table) para el posterior análisis.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
