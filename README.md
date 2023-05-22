@@ -52,8 +52,6 @@ El proceso constará de las siguientes etapas:
 
 ![image](https://github.com/ajaramillor/PruebaTecnica/assets/98030147/ed98fd4b-8a19-4f04-93e0-98557788504c)
 
-![image](https://github.com/ajaramillor/PruebaTecnica/assets/98030147/ed98fd4b-8a19-4f04-93e0-98557788504c)
-
 ## Factores de riesgo
 
 Los principales riesgos asociados con este proyecto incluyen:
