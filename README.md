@@ -1,8 +1,4 @@
 
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
-<!-- PROJECT LOGO -->
 <br />
 <div align="center">
 <h3 align="center">PRUEBA TÉCNICA</h3>
@@ -16,6 +12,8 @@
     ·
   </p>
 </div>
+
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
 **Índice**
 - [Planteamiento del problema](#planteamiento-del-problema)
@@ -31,6 +29,8 @@
   - [ETL](#etl)
   - [Dashboard](#dashboard)
 - [Pruebas unitarias](#pruebas-unitarias)
+- [Escenarios futuros](#escenarios-futuros)
+- [Referencias](#referencias)
 
 
 
@@ -123,7 +123,22 @@ El último paso de la solución propuesta es la creación del dashboard final, e
 Para verificar las funciones que se crean en el proceso se realizan pruebas unitarias con Pytest, en el repositorio se encuentra el archivo [test_funciones](funciones.py) para verificarlas. Las funciones que dependen de la API de Google no se probaron pues requiere un desarrollo diferente fuera del alcance de esta prueba como creacion de mocks de la API con Unittest.
 ![image](https://github.com/ajaramillor/PruebaTecnica/assets/98030147/b307f127-a009-4def-b193-3782af1e5888)
 
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+# Escenarios futuros
+
+La prueba técnica tiene las siguientes preguntas respecto a lo que puede suceder con esta solución en un futuro:
+
+- **Si los datos se incrementaran en 100x:** en este escenario se propone cambiar la Cloud Function por un Dataproc o cualquier otro servicio cloud que permita el despliegue de Apache e implementar Apache Spark para el procesamiento paralelo de los datos; mejorar la Cloud Function donde corre el proceso por una con más RAM puede no ser suficiente ya que todo el código funciona con Pandas y su consumo es muy elevado.
+- **Si las tuberías se ejecutaran diariamente en una ventana de tiempo especifica:** originalmente se propone correr la tubería o ETL cada día pues no influye mucho la información intra diaria en la toma de decisiones pero si se requiere más seguido no hay problema ya que la ETL no se relaciona con otras, si se requiere incorporar otras fuentes o ETL que dependan entre sí se recomienda migrar el proceso a Airflow o algún otro orquestador para facilitar el proceso.
+- **Si la base de datos necesitara ser accedido por más de 100 usuarios funcionales:** como la solución actual ya está implementada en Bigquery que es autoescalable no hay mucho por mejorar en este aspecto, lo que si se debe configurar es el dashboard para que solo lea información directamente de las tablas y no haga querys en el proceso pues 100 usuarios entrando al tiempo pueden elevar los costos sin necesidad.}
+- **Si se requiere hacer analítica en tiempo real, ¿Cuáles componentes cambiaria a su
+arquitectura propuesta?:** la infraestructura actual permite realizar analítica en tiempo real, el cambio sería consultar la información directamente desde una API que tenga la misma información y no esperar a que se consolide un CSV cada día.
+
+# Referencias
+
+- [https://www.kaggle.com/datasets/mmetter/flights](https://www.kaggle.com/datasets/mmetter/flights)
+- [https://chat.openai.com/](https://chat.openai.com/)
+- [https://cloud.google.com/bigquery/docs/samples/](https://cloud.google.com/bigquery/docs/samples/)
+<!-- LINKS EXTERNOS -->
+
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/alejandro-jaramillo-rivas/
