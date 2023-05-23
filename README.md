@@ -89,7 +89,7 @@ Teniendo claro el propósito del proyecto que es alimentar un dashboard para la 
 - Escalabilidad: El modelo en estrella es altamente escalable. A medida que se agregan más datos al sistema, se pueden agregar nuevas tablas de hechos y dimensiones sin afectar el rendimiento general. Esto permite que el dashboard crezca a medida que crecen las necesidades de la organización sin comprometer la velocidad de respuesta.
 
 A continuación se presenta el diagrama de la base de datos:
-![image](https://github.com/ajaramillor/PruebaTecnica/assets/98030147/f4dc2354-9f10-4ba0-b38d-b02819821c71)
+![image](https://github.com/ajaramillor/PruebaTecnica/assets/98030147/6008e867-fa57-42fd-a530-66c288e52baf)
 
 ## Carga de datos
 
